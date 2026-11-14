@@ -1,0 +1,257 @@
+
+.analytics-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 25px;
+}
+
+.analytics-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.analytics-eyebrow {
+  color: #648274;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.analytics-heading h2 {
+  margin: 7px 0;
+  color: #263c31;
+  font-family: Manrope, sans-serif;
+  font-size: 23px;
+}
+
+.analytics-heading p,
+.analytics-panel-heading p {
+  margin: 0;
+  color: #84918a;
+  font-size: 12px;
+}
+
+.analytics-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #e7f3e9;
+  color: #28794a;
+  font-size: 24px;
+}
+
+.analytics-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.analytics-card,
+.analytics-panel {
+  padding: 19px;
+  background: white;
+  border: 1px solid #e8eee9;
+  border-radius: 13px;
+}
+
+.analytics-card {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.analytics-card > span {
+  color: #78877e;
+  font-size: 11px;
+}
+
+.analytics-card > strong {
+  color: #2c4836;
+  font-family: Manrope, sans-serif;
+  font-size: 24px;
+}
+
+.analytics-card strong small {
+  font-size: 12px;
+}
+
+.analytics-card > small {
+  color: #98a39c;
+  font-size: 10px;
+}
+
+.analytics-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.analytics-panel-heading {
+  margin-bottom: 23px;
+}
+
+.analytics-panel-heading h3 {
+  margin: 0 0 6px;
+  color: #304438;
+  font-size: 14px;
+}
+
+.analytics-stage-list {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.analytics-stage-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+  color: #53675a;
+  font-size: 11px;
+}
+
+.analytics-stage-top strong {
+  color: #385e45;
+  font-size: 10px;
+}
+
+.analytics-track,
+.analytics-bar-track {
+  overflow: hidden;
+  border-radius: 20px;
+  background: #edf2ed;
+}
+
+.analytics-track {
+  height: 8px;
+}
+
+.analytics-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: #4a9665;
+  transition: width .3s ease;
+}
+
+.analytics-stage > small {
+  display: block;
+  margin-top: 6px;
+  color: #91a096;
+  font-size: 9px;
+}
+
+.analytics-bars {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap: 12px;
+  height: 190px;
+  padding-top: 12px;
+}
+
+.analytics-bar-item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  gap: 8px;
+  text-align: center;
+}
+
+.analytics-bar-value {
+  color: #52705c;
+  font-size: 9px;
+}
+
+.analytics-bar-track {
+  display: flex;
+  align-items: flex-end;
+  width: min(42px, 80%);
+  height: 125px;
+  border-radius: 8px 8px 3px 3px;
+}
+
+.analytics-bar {
+  width: 100%;
+  min-height: 0;
+  border-radius: 8px 8px 3px 3px;
+  background: #4a9665;
+  transition: height .3s ease;
+}
+
+.analytics-bar-item > span {
+  max-width: 85px;
+  color: #7d8b82;
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+.analytics-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.analytics-summary-grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 15px;
+  border-radius: 9px;
+  background: #f7faf7;
+}
+
+.analytics-summary-grid strong {
+  color: #315b3f;
+  font-size: 22px;
+}
+
+.analytics-summary-grid span {
+  color: #829087;
+  font-size: 10px;
+}
+
+.analytics-note {
+  padding: 15px;
+  border: 1px solid #e4eadf;
+  border-radius: 11px;
+  background: #f7faf5;
+  color: #526d58;
+}
+
+.analytics-note strong {
+  font-size: 12px;
+}
+
+.analytics-note p {
+  margin: 7px 0 0;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .analytics-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .analytics-content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .analytics-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
